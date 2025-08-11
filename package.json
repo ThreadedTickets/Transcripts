@@ -1,0 +1,26 @@
+{
+  "scripts": {
+    "start": "npx dotenvx run -f .env -- node --trace-warnings .build/src/index.js",
+    "build:start": "npm i && rm -rf .build && npx tsc && npm run start"
+  },
+  "devDependencies": {
+    "@types/async": "^3.2.25",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.48.4",
+    "async-mutex": "^0.5.0",
+    "better-sqlite3": "^12.2.0",
+    "express": "^5.1.0",
+    "readline": "^1.3.0"
+  },
+  "name": "transcripts",
+  "version": "1.0.0",
+  "description": "The transcript server for Threaded",
+  "main": "src/index.js",
+  "author": "",
+  "license": "ISC"
+}
